@@ -7,25 +7,25 @@ export const Data = [
     musics: [
       {
         id: 1,
-        name: "Birinchi muxabbatim",
+        name: "simple music",
         artist: "Sherali Jo'rayev",
         music: music1,
       },
       {
         id: 1,
-        name: "Birinchi muxabbatim",
+        name: "simple music",
         artist: "Sherali Jo'rayev",
         music: music1,
       },
       {
         id: 1,
-        name: "Birinchi muxabbatim",
+        name: "simple music",
         artist: "Sherali Jo'rayev",
         music: music1,
       },
       {
         id: 1,
-        name: "Birinchi muxabbatim",
+        name: "simple music",
         artist: "Sherali Jo'rayev",
         music: music1,
       },
@@ -67,7 +67,7 @@ export const Data = [
     musics: [
       {
         id: 1,
-        name: "Birinchi muxabbatim",
+        name: "trend",
         artist: "Sherali Jo'rayev",
         music: music1,
       },
@@ -127,7 +127,7 @@ export const Data = [
     musics: [
       {
         id: 1,
-        name: "Birinchi muxabbatim",
+        name: "Old",
         artist: "Sherali Jo'rayev",
         music: music1,
       },

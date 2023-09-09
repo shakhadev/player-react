@@ -4,6 +4,7 @@ import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Pages/Home.jsx";
+import { CategoryProvider } from "./Context/index.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -39,8 +40,10 @@ const router = createBrowserRouter([
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router}>
-      <App />
-    </RouterProvider>
+    <CategoryProvider>
+      <RouterProvider router={router}>
+        <App />
+      </RouterProvider>
+    </CategoryProvider>
   </React.StrictMode>
 );

@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import Menu from "../Menu";
 const index = () => {
+  const [open, setOpen] = useState(false);
   return (
     <div className="w-full bg-[#fff] flex justify-center ">
       <nav className="flex  justify-between w-[80%]  h-[90px] items-center ">
@@ -13,12 +15,15 @@ const index = () => {
           <li>
             <NavLink to={"/"}>Home</NavLink>
           </li>
-          <li>Menu</li>
+          <li onClick={() => setOpen(!open)} className="cursor-pointer">
+            Menu
+          </li>
           <li>
             <NavLink to={"/about-us"}>About Us</NavLink>
           </li>
         </ul>
       </nav>
+      {open && <Menu open={setOpen} />}
     </div>
   );
 };
